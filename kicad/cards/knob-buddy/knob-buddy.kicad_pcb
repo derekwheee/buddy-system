@@ -4026,7 +4026,7 @@
 				(pins "1" "2" "3" "4" "5")
 			)
 		)
-		(attr through_hole dnp)
+		(attr through_hole exclude_from_pos_files exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 1.16 0.81)
