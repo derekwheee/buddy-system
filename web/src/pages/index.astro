@@ -5,7 +5,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const tiles = [
     {
         fam: 'ctl',
-        plate: ['POTS', 'BUDDY'],
+        plate: ['KNOB', 'BUDDY'],
         h: 'Six smooth knobs',
         p: 'Six pots broken out one-to-one. Turn anything into a control surface.',
         a: '6× linear pot',
@@ -38,7 +38,7 @@ const tiles = [
     },
     {
         fam: 'snd',
-        plate: ['AMP', 'BUDDY'],
+        plate: ['LINE', 'BUDDY'],
         h: 'Circuit to sound',
         p: 'A speaker amp with a volume knob. The shortest path from signal to ears.',
         a: '2W class-D',
@@ -49,7 +49,7 @@ const tiles = [
     },
     {
         fam: 'lgc',
-        plate: ['CLOCK', 'BUDDY'],
+        plate: ['OLED', 'BUDDY'],
         h: 'A steady pulse',
         p: 'Tempo, divisions, and triggers — the heartbeat for sequencers and steps.',
         a: '1–300 BPM',
@@ -60,7 +60,7 @@ const tiles = [
     },
     {
         fam: 'uty',
-        plate: ['BLANK', 'BUDDY'],
+        plate: ['ENCODER', 'BUDDY'],
         h: 'Bare grid, your rules',
         p: "A prototyping grid wired to the bay. Make the card we didn't — then share it.",
         a: '0.1" perfboard',
@@ -81,7 +81,7 @@ const tiles = [
     <header class="sec hero dots-dark" id="top" data-screen-label="Hero">
         <div class="wrap">
             <div class="hero-kicker reveal">
-                <span class="mcap mcap-ink">EURORACK-COMPATIBLE · SOLDERLESS · OPEN HARDWARE</span>
+                <span class="mcap mcap-ink">MODULAR · SOLDERLESS · OPEN HARDWARE</span>
             </div>
             <h1 class="reveal d1">Build synths with a <em>buddy</em></h1>
             <p class="sub reveal d2">
@@ -90,13 +90,8 @@ const tiles = [
                 can't undo.
             </p>
             <div class="hero-ctas reveal d3">
-                <a class="btn" href="#waitlist">Join the waitlist <span class="arrow">→</span></a>
-                <a class="btn ghost" href="#how">See how it works</a>
-            </div>
-            <div class="hero-trust reveal d4">
-                <span><b>6</b> card families</span>
-                <span><b>6-pin</b> universal bay</span>
-                <span><b>0</b> solder joints</span>
+                <a class="btn" href="#waitlist">Stay in sync <span class="arrow">→</span></a>
+                <a class="btn ghost" href="#cards">See how it works</a>
             </div>
 
             <!-- composed base-unit stand-in (silkscreen placeholder) -->
@@ -116,23 +111,24 @@ const tiles = [
                             <div class="keybar"></div>
                             <div class="fp-name">
                                 <span class="plate" style="font-size:9px;"
-                                    ><span class="cell fill"><span>POTS</span></span><span
-                                        class="cell">BDY</span
+                                    ><span class="cell fill"><span>KNOB</span></span><span
+                                        class="cell">BUDDY</span
                                     ></span
                                 >
                             </div>
-                            <div class="fp-ref">BD-CTL-01</div>
+                            <div class="fp-ref">BD-KNB-01</div>
                             <div class="fp-controls">
                                 <div class="ctrl-row">
-                                    <span class="knob sm"></span><span class="knob sm"></span><span
-                                        class="knob sm"></span>
+                                    <span class="knob sm"></span><span class="knob sm"></span>
                                 </div>
                                 <div class="ctrl-row">
-                                    <span class="knob sm"></span><span class="knob sm"></span><span
-                                        class="knob sm"></span>
+                                    <span class="knob sm"></span><span class="knob sm"></span>
+                                </div>
+                                <div class="ctrl-row">
+                                    <span class="knob sm"></span><span class="knob sm"></span>
                                 </div>
                             </div>
-                            <div class="fp-foot">1 · 5 · 10</div>
+                            <div class="fp-foot">1 2 3 4 5 6</div>
                         </div>
                         <div class="face" style="--fam: var(--fam-dat);">
                             <div class="keybar"></div>
@@ -143,44 +139,56 @@ const tiles = [
                                     ></span
                                 >
                             </div>
-                            <div class="fp-ref">BD-DAT-01</div>
+                            <div class="fp-ref">BD-MIDI-01</div>
                             <div class="fp-controls">
-                                <span class="jack"></span><span class="jack"></span>
+                                <span class="jack"></span><span class="jack"></span><span class="jack"></span>
                             </div>
-                            <div class="fp-foot">IN · OUT</div>
+                            <div class="fp-foot">IN · THRU · OUT</div>
                         </div>
                         <div class="face" style="--fam: var(--fam-snd);">
                             <div class="keybar"></div>
                             <div class="fp-name">
                                 <span class="plate" style="font-size:9px;"
-                                    ><span class="cell fill"><span>AMP</span></span><span
-                                        class="cell">BDY</span
+                                    ><span class="cell fill"><span>LINE</span></span><span
+                                        class="cell">BUDDY</span
                                     ></span
                                 >
                             </div>
-                            <div class="fp-ref">BD-SND-01</div>
+                            <div class="fp-ref">BD-LIN-01</div>
+
                             <div class="fp-controls">
-                                <span class="speaker"></span><span class="knob sm"></span>
+                                <div class="ctrl-row">
+                                    <span class="jack"></span>
+                                    <div class="fp-controls">
+                                        <span class="jack"></span><span class="knob sm"></span>
+                                    </div>
+                                    <span class="jack"></span>
+                                </div>
                             </div>
-                            <div class="fp-foot">VOL · OUT</div>
+                            <div class="fp-foot">IN · PHN · OUT</div>
                         </div>
                         <div class="face" style="--fam: var(--fam-lgc);">
                             <div class="keybar"></div>
                             <div class="fp-name">
                                 <span class="plate" style="font-size:9px;"
-                                    ><span class="cell fill"><span>CLK</span></span><span
-                                        class="cell">BDY</span
+                                    ><span class="cell fill"><span>SWITCH</span></span><span
+                                        class="cell">BUDDY</span
                                     ></span
                                 >
                             </div>
-                            <div class="fp-ref">BD-LGC-01</div>
+                            <div class="fp-ref">BD-SWC-01</div>
                             <div class="fp-controls">
-                                <span class="knob"></span>
                                 <div class="ctrl-row">
-                                    <span class="jack"></span><span class="jack"></span>
+                                    <span class="toggle"></span><span class="toggle"></span>
+                                </div>
+                                <div class="ctrl-row">
+                                    <span class="toggle"></span><span class="toggle"></span>
+                                </div>
+                                <div class="ctrl-row">
+                                    <span class="toggle"></span><span class="toggle"></span>
                                 </div>
                             </div>
-                            <div class="fp-foot">TEMPO · ÷</div>
+                            <div class="fp-foot">1 2 3 4 5 6</div>
                         </div>
                         <div class="breadboard">
                             <span class="bb-label">BREADBOARD · 1P PITCH</span>
@@ -202,10 +210,6 @@ const tiles = [
                     <span class="eyebrow">01 — THE CARDS</span>
                     <h2>Meet the Buddies</h2>
                 </div>
-                <span class="aside"
-                    >Six families · one 6-pin bay · every card swaps. Hover a card to see what's on
-                    board.</span
-                >
             </div>
 
             <div class="card-grid">
