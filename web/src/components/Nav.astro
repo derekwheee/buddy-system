@@ -2,14 +2,18 @@
 // Shared site nav — dark "soldermask panel", real routes, restyled to the homepage design.
 const items = [
     { href: '/features/', label: 'CARDS' },
+    // { href: '/design/', label: 'DESIGN' },
+    { href: '/blog/', label: 'UPDATES' },
     { href: '/docs/', label: 'DOCS' },
-    { href: '/design/', label: 'DESIGN' },
-    { href: '/blog/', label: 'BLOG' },
 ];
 const path = Astro.url.pathname;
 const isActive = (href: string) => path === href || path.startsWith(href);
 ---
 
+
+<!-- <div class="waitlist-smallscreen">
+    <a class="btn" href="/#waitlist">Join the waitlist</a>
+</div> -->
 <header class="nav" id="nav">
     <div class="wrap nav-row">
         <a href="/" class="plate brand" aria-label="Buddy System — home">
@@ -24,7 +28,7 @@ const isActive = (href: string) => path === href || path.startsWith(href);
                 ))
             }
         </div>
-        <a class="btn" href="/#waitlist">Join the waitlist</a>
+        <a class="btn waitlist-widescreen" href="/#waitlist">Join the newsletter</a>
     </div>
 </header>
 
@@ -97,9 +101,28 @@ const isActive = (href: string) => path === href || path.startsWith(href);
         padding: 8px 16px 7px;
         font-size: 13px;
     }
+
+    .waitlist-smallscreen {
+        display: none;
+        padding: 8px 0;
+
+        a {
+            margin: auto;
+        }
+    }
+
     @media (max-width: 760px) {
         .nav-links {
+            /* display: none; */
+        }
+
+        .waitlist-widescreen {
             display: none;
+        }
+
+        .waitlist-smallscreen {
+            display: flex;
+            margin: auto;
         }
     }
 </style>
