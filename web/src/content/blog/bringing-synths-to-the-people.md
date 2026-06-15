@@ -6,15 +6,13 @@ deck: "Building synths on breadboards, I got tired of potentiometers that wouldn
 pubDate: 2026-06-15
 author: Derek Wheelden
 authorInitials: DW
-authorRole: 'HARDWARE · FOUNDING BUDDY'
-authorBio: "Designs the boards and writes the field manual. Spends suspicious amounts of time deciding which shade a keybar should be. Believes the best instrument is the one you'll actually plug in."
 tags: [introduction, buddy-system, diy-synth, open-hardware, breadboard]
 family: uty
 kicker: 'ANNOUNCEMENT · BS-LOG-001 · THE FIRST POST'
 crumb: ANNOUNCEMENTS
 famStrip: true
 readTime: 8 MIN
-postType: "FOUNDER'S NOTE"
+postType: "NOTE"
 hero:
     src: /blog/hardware-render.png
     alt: 'The Buddy System — a base unit carrying Knob and MIDI Buddies, a switch bank, two open module bays and a 60-row breadboard with a host microcontroller mid-board.'

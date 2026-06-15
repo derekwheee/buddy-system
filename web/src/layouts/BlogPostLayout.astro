@@ -28,8 +28,6 @@ interface Props {
     updatedDate?: Date;
     author?: string;
     authorInitials?: string;
-    authorRole?: string;
-    authorBio?: string;
     tags?: string[];
     family?: string;
     kicker?: string;
@@ -52,8 +50,6 @@ const {
     pubDate,
     author = 'Buddy System',
     authorInitials,
-    authorRole,
-    authorBio,
     tags = [],
     family = 'snd',
     kicker,
@@ -147,7 +143,6 @@ const ALL_FAMS = ['ctl', 'snd', 'dat', 'lgc', 'uty', 'pwr'];
                         <span class="avatar">{initials}</span>
                         <span>
                             <span class="name">{author}</span>
-                            {authorRole && <span class="role">{authorRole}</span>}
                         </span>
                     </div>
                     <div class="meta">
@@ -233,16 +228,6 @@ const ALL_FAMS = ['ctl', 'snd', 'dat', 'lgc', 'uty', 'pwr'];
                         </div>
                     )
                 }
-
-                <div class="authorcard">
-                    <span class="abar"></span>
-                    <span class="a-av">{initials}</span>
-                    <div>
-                        <div class="a-name">{author}</div>
-                        {authorRole && <div class="a-role">{authorRole}</div>}
-                        {authorBio && <p class="a-bio">{authorBio}</p>}
-                    </div>
-                </div>
 
                 {
                     (prev || next) && (
