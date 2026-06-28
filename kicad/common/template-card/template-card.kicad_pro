@@ -654,15 +654,24 @@
         "filename": "template-card.kicad_sch",
         "name": "Root",
         "uuid": "45510523-38ae-4a43-b070-6227195f9104"
+      },
+      {
+        "filename": "buddy_sheet.kicad_sch",
+        "name": "Buddy Sheet",
+        "uuid": "2bdb0722-ccd7-43cb-a030-61e3d34c813a"
       }
     ],
-    "used_designators": "#PWR1-5,J3",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
     [
       "45510523-38ae-4a43-b070-6227195f9104",
       "Root"
+    ],
+    [
+      "2bdb0722-ccd7-43cb-a030-61e3d34c813a",
+      "Buddy Sheet"
     ]
   ],
   "text_variables": {},
