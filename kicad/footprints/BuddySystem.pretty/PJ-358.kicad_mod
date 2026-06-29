@@ -3,12 +3,36 @@
 	(generator "pcbnew")
 	(generator_version "10.0")
 	(layer "F.Cu")
+	(property "Reference" "PJ-358"
+		(at 0 -4.25 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "2a800d73-2546-4c9f-a810-26c2c9ce7f0a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "PJ-358"
+		(at 0 5.25 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "9711b3ba-2f8f-4d4e-b945-cfa35bd42d79")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
 	(property "Datasheet" ""
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "7c5f1c38-69ba-4929-9298-fa54adb4a4b3")
+		(uuid "acfe1817-a19a-4771-92a3-e5c827e9f3f6")
 		(effects
 			(font
 				(size 1 1)
@@ -21,31 +45,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "22433d78-bfa8-4d22-a321-2bc07fd9c386")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Reference" "PJ-358"
-		(at 0 -4.25 0)
-		(unlocked yes)
-		(layer "F.SilkS")
-		(uuid "6b4dc45c-6179-4644-b375-b85300fa72aa")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.1)
-			)
-		)
-	)
-	(property "Value" "PJ-358"
-		(at 0 5.25 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(uuid "3ce805f1-6e25-4d36-8428-de19e59c537e")
+		(uuid "470f521c-6ef1-4448-b769-99150fdb455c")
 		(effects
 			(font
 				(size 1 1)

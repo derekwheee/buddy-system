@@ -656,12 +656,12 @@
         "uuid": "45510523-38ae-4a43-b070-6227195f9104"
       },
       {
-        "filename": "line_buddy.kicad_sch",
-        "name": "Line Buddy",
-        "uuid": "81da226c-a154-4090-9db6-c44182b3caba"
+        "filename": "buddy_sheet.kicad_sch",
+        "name": "Buddy Sheet",
+        "uuid": "2bdb0722-ccd7-43cb-a030-61e3d34c813a"
       }
     ],
-    "used_designators": "L1,U3,#PWR14-36,#PWR39,#PWR48,C6-18,D4-7,R6-14,J3,J5-7",
+    "used_designators": "#PWR6,#PWR11,#PWR14,U3",
     "variants": []
   },
   "sheets": [
@@ -670,8 +670,8 @@
       "Root"
     ],
     [
-      "81da226c-a154-4090-9db6-c44182b3caba",
-      "Line Buddy"
+      "2bdb0722-ccd7-43cb-a030-61e3d34c813a",
+      "Buddy Sheet"
     ]
   ],
   "text_variables": {},
